@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <title><?= esc($pageTitle ?? 'Martabak Rindu') ?></title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css" rel="stylesheet">
+    <style>
+        body {
+            background-color: #f8f9fa;
+        }
+
+        .text-orange {
+            color: #FF6F00 !important;
+        }
+
+        .btn-orange {
+            background-color: #FF6F00;
+            color: white;
+        }
+
+        .btn-orange:hover {
+            background-color: #e65c00;
+            color: white;
+        }
+
+        .navbar-orange {
+            background-color: #FF6F00;
+        }
+
+        .navbar-orange .nav-link {
+            color: white;
+            font-weight: 500;
+        }
+
+        .navbar-orange .nav-link:hover {
+            color: #ffe4b5;
+        }
+
+        .card:hover {
+            transform: scale(1.02);
+            transition: all 0.3s ease;
+            box-shadow: 0 6px 18px rgba(255, 111, 0, 0.3);
+        }
+
+        .nav-link.active {
+            background-color: #FF6F00 !important;
+            color: white !important;
+            border-radius: 0.375rem;
+        }
+
+        .nav-link {
+            color: #343a40;
+            transition: background-color 0.3s ease;
+            
+        }
+
+        .nav-link:hover {
+            background-color: #ffc078 !important;
+            color: white !important;
+            border-radius: 0.375rem;
+        }
+
+        .navbar-toggler:focus {
+            outline: none;
+            box-shadow: none;
+        }
+
+        .navbar-nav .nav-link {
+            color: #fff !important;
+            font-weight: 500;
+            transition: all 0.3s ease;
+        }
+
+        .navbar-nav .nav-link:hover {
+            background-color: rgba(255, 255, 255, 0.15);
+            border-radius: 0.375rem;
+            color: #ffe4b5 !important;
+        }
+
+        .navbar-nav .nav-link.active {
+            background-color: rgba(255, 255, 255, 0.3);
+            color: white !important;
+            border-radius: 0.375rem;
+        }
+
+        .nav-item{
+            text-align: center;
+        }
+
+        .footer-custom {
+            background-color: #2b2823;
+            color: #fff;
+        }
+
+        .footer-line {
+            width: 80%;
+            border-top: 1px solid #ddd;
+            opacity: 0.4;
+        }
+
+        .footer-link {
+            color: #ddd;
+            text-decoration: none;
+            font-size: 14px;
+        }
+
+        .footer-link:hover {
+            color: #fbbf24;
+            text-decoration: underline;
+        }
+
+        .footer-tagline {
+            font-family: 'Brush Script MT', cursive;
+            font-size: 28px;
+            font-weight: 400;
+        }
+    </style>
+</head>
+<body>
+<div class="d-flex flex-column min-vh-100"> <!-- WRAPPER MULAI -->
+
+<!-- Navbar -->
+<nav class="navbar navbar-expand-lg navbar-orange shadow-sm sticky-top">
+    <div class="container">
+        <!-- Brand Logo -->
+        <a class="navbar-brand d-flex align-items-center text-white fw-bold" href="/home">
+            <img src="/uploads/logo.png" alt="Logo Martabak" class="me-2" style="height: 40px;">
+            <span class="fs-5">Martabak Rindu</span>
+        </a>
+
+        <!-- Hamburger Toggle Button -->
+        <button class="navbar-toggler border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navMenu"
+                aria-controls="navMenu" aria-expanded="false" aria-label="Toggle navigation">
+            <i class="bi bi-list text-white fs-2"></i>
+        </button>
+
+        <!-- Navbar Links -->
+        <div class="collapse navbar-collapse justify-content-end" id="navMenu">
+            <ul class="navbar-nav mb-2 mb-lg-0 gap-lg-2">
+                <li class="nav-item">
+                    <a class="nav-link px-3" href="/home">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link px-3" href="/cerita">Cerita</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link px-3" href="/menu">Menu</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link px-3" href="/kontak">Kontak</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link px-3" href="/lokasi">Lokasi</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</nav>
+
+
